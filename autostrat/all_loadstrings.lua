@@ -7,3 +7,8 @@ return {
   ["stratrecorder"]   =  "https://raw.githubusercontent.com/decryp1/tower-defense-simulator/refs/heads/main/autostrat/stratrecorder.lua",
   ["towerstacker"]    =  "https://raw.githubusercontent.com/decryp1/tower-defense-simulator/refs/heads/main/autostrat/towerstacker.lua"
 }
+--[[
+loadstrings = loadstring(game:HttpGet("https://raw.githubusercontent.com/decryp1/tower-defense-simulator/refs/heads/main/autostrat/all_loadstrings"))()
+print(type(loadstrings.piecestring))
+print(loadstrings.piecestring(loadstrings["resources"]))
+]]
