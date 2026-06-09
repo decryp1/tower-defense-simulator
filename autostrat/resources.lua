@@ -38,6 +38,9 @@ a = {
         writefile(filename .. "." .. filetype, filedata)
     end
     -- export("herklestrat", "lua", true, logs)
+
+    local function piecestring(traffic) return loadstring(game:HttpGet(traffic))(); end
+
 }
 return a
 --[[aaa
